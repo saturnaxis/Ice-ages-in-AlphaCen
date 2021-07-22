@@ -1,0 +1,274 @@
+-------- Log file aCenA.log -------
+
+Executable: vplanet
+Version: v1.1.0-183-g0f95ae95cddfd9d2d07f242812f81376538a3bca
+System Name: aCenA
+Primary Input File: vpl.in
+Body File #1: sun.in
+Body File #2: earth.in
+Allow files to be overwitten: Yes
+Mass Units: Kilograms
+Length Units: Meters
+Time Units: Seconds
+Angle Units: Radians
+
+------- FORMATTING -----
+Verbosity Level: 5
+Crossover Decade for Scientific Notation: 4
+Number of Digits After Decimal: 8
+Integration Method: Runge-Kutta4
+Direction: Forward
+Time Step: 3.15576000e+08
+Stop Time: 1.57788000e+13
+Output Interval: 3.15576000e+10
+Use Variable Timestep: No
+Minimum Value of ecc and obl: 0.00000000
+
+
+---- INITIAL SYSTEM PROPERTIES ----
+(Age) System Age [sec]: 0.00000000 
+(Time) Simulation Time [sec]: 0.00000000 
+(TotAngMom) Total Angular Momentum [kg*m^2/sec]: 1.47709094e+43 
+(TotEnergy) Total System Energy [kg*m^2/sec^2]: -3.38277169e+41 
+(PotEnergy) Body's non-orbital Potential Energy [kg*m^2/sec^2]: -3.38813109e+41 
+(KinEnergy) Body's non-orbital Kinetic Energy [kg*m^2/sec^2]: 5.35943481e+38 
+(DeltaTime) Average Timestep Over Last Output Interval [sec]: 3.15576000e+08 
+(Density) Average Density [kg/m^3]: 4.37135839e+04 
+(LongP) Body's Longitude of pericenter [rad]: 3.92699082 
+(LXUVTot) Total XUV Luminosity [kg*m^2/sec^2/(m^2*sec)]: 5.78790000e+23 
+
+----- BODY: sun ----
+Active Modules: STELLAR
+Module Bit Sum: 65
+Color: 000000
+(Mass) Mass [kg]: 2.25287533e+30 
+(Radius) Radius [m]: 5.99887462e+08 
+(RadGyra) Radius of Gyration []: 0.50000000 
+(RotAngMom) Rotational Angular Momentum [kg*m^2/sec]: 1.47395038e+43 
+(RotVel) Rotational Velocity [m/sec]: 4.36250473e+04 
+(BodyType) Type of Body (0 == planet) []: 0.00000000 
+(RotRate) Rotational Frequency [/sec]: 7.27220522e-05 
+(RotPer) Rotational Period [sec]: 8.64000000e+04 
+(HZLimitDryRunaway) Semi-major axis of Dry Runaway HZ Limit [m]: 1.66571821e+11 
+(HZLimRecVenus) Recent Venus Habitable Zone Limit [m]: 1.37264573e+11 
+(HZLimRunaway) Runaway Greenhouse Habitable Zone Limit [m]: 1.79241390e+11 
+(HZLimMoistGreenhouse) Moist Greenhouse Habitable Zone Limit [m]: 1.81622279e+11 
+(HZLimMaxGreenhouse) Maximum Greenhouse Habitable Zone Limit [m]: 3.07857385e+11 
+(HZLimEarlyMars) Early Mars Habitable Zone Limit [m]: 3.35897348e+11 
+(Instellation) Orbit-averaged INcident STELLar radiATION [kg*m^2/sec^2/(m^2*sec)]: -1.00000000 
+(CriticalSemiMajorAxis) Holman & Wiegert (1999) P-type Critical Semi-major Axis [m]: -1.00000000 
+(LostEnergy) Body's Total Lost Energy [kg*m^2/sec^2]: 5.56268465e-309 
+(LostAngMom) Lost Angular Momentum due to Magnetic Braking [kg*m^2/sec]: 5.56268465e-309 
+----- STELLAR PARAMETERS (sun)------
+(Luminosity) Luminosity [kg*m^2/sec^3]: 5.78790000e+26 
+(LXUVStellar) Base X-ray/XUV Luminosity [kg*m^2/sec^3]: 5.78790000e+23 
+(Temperature) Effective Temperature [K]: 5778.00000000 
+(LXUVFrac) X-ray/XUV Luminosity Fraction []: 0.00100000 
+(RossbyNumber) Rossby Number []: 0.07825965 
+(DRotPerDtStellar) Time Rate of Change of Rotation Period in STELLAR []: 2.00659827e-11 
+Output Order:
+Grid Output Order:
+
+----- BODY: Earth ----
+Active Modules: POISE
+Module Bit Sum: 257
+Color: 000000
+(Mass) Mass [kg]: 5.97154583e+24 
+(Obliquity) Obliquity [rad]: 0.40142573 
+(PrecA) Body's precession angle [rad]: 0.41470768 
+(Radius) Radius [m]: 6.37810000e+06 
+(RadGyra) Radius of Gyration []: 0.57411741 
+(BodyType) Type of Body (0 == planet) []: 0.00000000 
+(HZLimitDryRunaway) Semi-major axis of Dry Runaway HZ Limit [m]: 1.34377944e+11 
+(HZLimRecVenus) Recent Venus Habitable Zone Limit [m]: 1.37264573e+11 
+(HZLimRunaway) Runaway Greenhouse Habitable Zone Limit [m]: 1.79241390e+11 
+(HZLimMoistGreenhouse) Moist Greenhouse Habitable Zone Limit [m]: 1.81622279e+11 
+(HZLimMaxGreenhouse) Maximum Greenhouse Habitable Zone Limit [m]: 3.07857385e+11 
+(HZLimEarlyMars) Early Mars Habitable Zone Limit [m]: 3.35897348e+11 
+(Instellation) Orbit-averaged INcident STELLar radiATION [kg*m^2/sec^2/(m^2*sec)]: 1361.15800342 
+(Eccentricity) Orbital Eccentricity []: 0.00000000 
+(MeanMotion) Orbital Mean Motion [/sec]: 1.55424474e-07 
+(OrbPeriod) Orbital Period [sec]: 4.04259712e+07 
+(SemiMajorAxis) Semi-major Axis [m]: 1.83950642e+11 
+-----POISE PARAMETERS (Earth)------
+(TGlobal) Global mean temperature from POISE [C]: 13.54608943 
+(AlbedoGlobal) Global mean bond albedo from POISE []: 0.34919195 
+(FluxInGlobal) Global mean flux in (insol*(1-albedo)) from POISE [kg*m^2/sec^2/(m^2*sec)]: 231.25897562 
+(FluxOutGlobal) Global mean flux out from POISE [W/m^2]: 231.61132691 
+(TotIceMass) Global total ice mass in ice sheets [kg]: 0.00000000 
+(TotIceFlow) Global total ice flow in ice sheets (should = 0) [kg]: 0.00000000 
+(TotIceBalance) Global total ice balance in ice sheets (this time step) [kg]: 0.00000000 
+(SkipSeas) Is Seasonal model skipped due to RGH or snowball? []: 0.00000000 
+(AreaIceCov) Fractional area ice covered []: 0.07867550 
+(Latitude) Latitude. [Degrees]: -83.40235225 
+(TempLat) Surface temperature by latitude. [C]: -16.39887353 
+(AlbedoLat) Surface albedo by latitude. []: 0.60000000 
+(AnnInsol) Annual insolation by latitude. [kg*m^2/sec^2/(m^2*sec)]: 171.86308699 
+(FluxMerid) Total meridional (northward) flux by latitude [kg*m^2/sec^2]: -1.41585371e+15 
+(FluxIn) Incoming flux by latitude [kg*m^2/sec^2/(m^2*sec)]: 68.74760619 
+(FluxOut) Outgoing (spaceward) flux by latitude [kg*m^2/sec^2/(m^2*sec)]: 169.02635433 
+(DivFlux) Divergence of flux (flow into adjacent cells) by latitude [kg*m^2/sec^2/(m^2*sec)]: -95.78419946 
+(IceMass) Mass of ice sheets/area by latitude []: 0.00000000 
+(IceHeight) Height of ice sheets [m]: 0.00000000 
+(DIceMassDt) derivative of mass of ice sheets/area by latitude [m]: 0.00000000 
+(IceFlow) flow of ice sheets/area by latitude []: 0.00000000 
+(EnergyResL) Energy residual on land [kg*m^2/sec^2/(m^2*sec)]: -1.45136639 
+(EnergyResW) Energy residual over water [kg*m^2/sec^2/(m^2*sec)]: 0.39596113 
+(BedrockH) height/depth of bedrock [m]: 0.00000000 
+(TempLandLat) Land surface temperature by latitude. [C]: -17.89131887 
+(TempWaterLat) Water surface temperature by latitude. [C]: -15.63003805 
+(AlbedoLandLat) Land surface albedo by latitude. []: 0.60000000 
+(AlbedoWaterLat) Water surface albedo by latitude. []: 0.60000000 
+(TempMinLat) Minimum surface temperature over a year by latitude. [sec]: 249.80676026 
+(TempMaxLat) Maximum surface temperature over a year by latitude. [sec]: 264.31322051 
+(Snowball) Is the planet in a snowball state? []: 0.00000000 
+(PlanckBAvg) Annually averaged Planck B coeff []: 2.09000000 
+(IceAccum) Ice growth per orbit (accumulation only) []: 0.81859615 
+(IceAblate) ice decay per orbit (ablation only) []: -0.12067756 
+(TempMaxLand) Maximum surface temperature on land [sec]: 273.57641388 
+(TempMaxWater) Maximum surface temperature on water [sec]: 259.88087191 
+(PeakInsol) Peak insolation by latitude. [kg*m^2/sec^2/(m^2*sec)]: 528.32463846 
+(IceCapNorthLand) Does the planet have a northern polar ice cap on land? []: 0.00000000 
+(IceCapNorthSea) Does the planet have a northern polar sea ice cap []: 1.00000000 
+(IceCapSouthLand) Does the planet have a southern polar ice cap on land? []: 0.00000000 
+(IceCapSouthSea) Does the planet have a southern polar sea ice cap? []: 1.00000000 
+(IceBeltLand) Does the planet have a land ice belt? []: 0.00000000 
+(IceBeltSea) Does the planet have a sea ice belt? []: 0.00000000 
+(SnowballLand) Is all land covered in ice? []: 0.00000000 
+(SnowballSea) Is all sea covered in ice? []: 0.00000000 
+(IceFree) Is the planet free of sea and land ice? []: 0.00000000 
+(IceCapNorthLatLand) Southernmost extent of northern land ice cap. [rad]: 100.00000000 
+(IceCapNorthLatSea) Southernmost extent of northern sea ice cap. [rad]: 1.06372852 
+(IceCapSouthLatLand) Northernmost extent of southern land ice cap. [rad]: 100.00000000 
+(IceCapSouthLatSea) Northernmost extent of southern sea ice cap. [rad]: 100.00000000 
+(IceBeltNorthLatLand) Northernmost extent of land ice belt. [rad]: 100.00000000 
+(IceBeltNorthLatSea) Northernmost extent of sea ice belt. [rad]: 100.00000000 
+(IceBeltSouthLatLand) Southernmost extent of land ice belt. [rad]: 100.00000000 
+(IceBeltSouthLatSea) Southernmost extent of sea ice belt. [rad]: 100.00000000 
+Output Order: Time[year] TGlobal[C] AlbedoGlobal[] FluxOutGlobal[solar*AU^2/year^2/(AU^2*year)] TotIceMass[kg] AreaIceCov[kg] DeltaTime[year]
+Grid Output Order: Time[year] Latitude[Degrees] IceMass[Degrees] TempLat[C] AlbedoLat[] IceAccum[] IceAblate[] TempLandLat[C] TempWaterLat[C]
+
+
+
+---- FINAL SYSTEM PROPERTIES ----
+(Age) System Age [sec]: 1.57788000e+13 
+(Time) Simulation Time [sec]: 1.57788000e+13 
+(TotAngMom) Total Angular Momentum [kg*m^2/sec]: 1.47708908e+43 
+(TotEnergy) Total System Energy [kg*m^2/sec^2]: -3.38277169e+41 
+(PotEnergy) Body's non-orbital Potential Energy [kg*m^2/sec^2]: -3.38813109e+41 
+(KinEnergy) Body's non-orbital Kinetic Energy [kg*m^2/sec^2]: 5.32029857e+38 
+(DeltaTime) Average Timestep Over Last Output Interval [sec]: 3.15576000e+08 
+(Density) Average Density [kg/m^3]: 4.37135839e+04 
+(LongP) Body's Longitude of pericenter [rad]: 3.92699082 
+(LXUVTot) Total XUV Luminosity [kg*m^2/sec^2/(m^2*sec)]: 5.78790000e+23 
+
+----- BODY: sun ----
+Active Modules: STELLAR
+Module Bit Sum: 65
+Color: 000000
+(Mass) Mass [kg]: 2.25287533e+30 
+(Radius) Radius [m]: 5.99887462e+08 
+(RadGyra) Radius of Gyration []: 0.50000000 
+(RotAngMom) Rotational Angular Momentum [kg*m^2/sec]: 1.46855890e+43 
+(RotVel) Rotational Velocity [m/sec]: 4.34654737e+04 
+(BodyType) Type of Body (0 == planet) []: 0.00000000 
+(RotRate) Rotational Frequency [/sec]: 7.24560463e-05 
+(RotPer) Rotational Period [sec]: 8.67171980e+04 
+(HZLimitDryRunaway) Semi-major axis of Dry Runaway HZ Limit [m]: 1.66571821e+11 
+(HZLimRecVenus) Recent Venus Habitable Zone Limit [m]: 1.37264573e+11 
+(HZLimRunaway) Runaway Greenhouse Habitable Zone Limit [m]: 1.79241390e+11 
+(HZLimMoistGreenhouse) Moist Greenhouse Habitable Zone Limit [m]: 1.81622279e+11 
+(HZLimMaxGreenhouse) Maximum Greenhouse Habitable Zone Limit [m]: 3.07857385e+11 
+(HZLimEarlyMars) Early Mars Habitable Zone Limit [m]: 3.35897348e+11 
+(Instellation) Orbit-averaged INcident STELLar radiATION [kg*m^2/sec^2/(m^2*sec)]: -1.00000000 
+(CriticalSemiMajorAxis) Holman & Wiegert (1999) P-type Critical Semi-major Axis [m]: -1.00000000 
+(LostEnergy) Body's Total Lost Energy [kg*m^2/sec^2]: 3.91362427e+36 
+(LostAngMom) Lost Angular Momentum due to Magnetic Braking [kg*m^2/sec]: 5.39148027e+40 
+----- STELLAR PARAMETERS (sun)------
+(Luminosity) Luminosity [kg*m^2/sec^3]: 5.78790000e+26 
+(LXUVStellar) Base X-ray/XUV Luminosity [kg*m^2/sec^3]: 5.78790000e+23 
+(Temperature) Effective Temperature [K]: 5778.00000000 
+(LXUVFrac) X-ray/XUV Luminosity Fraction []: 0.00100000 
+(RossbyNumber) Rossby Number []: 0.07854696 
+(DRotPerDtStellar) Time Rate of Change of Rotation Period in STELLAR []: 2.01396504e-11 
+Output Order:
+Grid Output Order:
+
+----- BODY: Earth ----
+Active Modules: POISE
+Module Bit Sum: 257
+Color: 000000
+(Mass) Mass [kg]: 5.97154583e+24 
+(Obliquity) Obliquity [rad]: 0.16482663 
+(PrecA) Body's precession angle [rad]: 3.39471653 
+(Radius) Radius [m]: 6.37810000e+06 
+(RadGyra) Radius of Gyration []: 0.57411741 
+(BodyType) Type of Body (0 == planet) []: 0.00000000 
+(HZLimitDryRunaway) Semi-major axis of Dry Runaway HZ Limit [m]: 1.34310477e+11 
+(HZLimRecVenus) Recent Venus Habitable Zone Limit [m]: 1.37264573e+11 
+(HZLimRunaway) Runaway Greenhouse Habitable Zone Limit [m]: 1.79241390e+11 
+(HZLimMoistGreenhouse) Moist Greenhouse Habitable Zone Limit [m]: 1.81622279e+11 
+(HZLimMaxGreenhouse) Maximum Greenhouse Habitable Zone Limit [m]: 3.07857385e+11 
+(HZLimEarlyMars) Early Mars Habitable Zone Limit [m]: 3.35897348e+11 
+(Instellation) Orbit-averaged INcident STELLar radiATION [kg*m^2/sec^2/(m^2*sec)]: 1361.10530644 
+(Eccentricity) Orbital Eccentricity []: 0.04007100 
+(MeanMotion) Orbital Mean Motion [/sec]: 1.55326331e-07 
+(OrbPeriod) Orbital Period [sec]: 4.04515145e+07 
+(SemiMajorAxis) Semi-major Axis [m]: 1.84028120e+11 
+-----POISE PARAMETERS (Earth)------
+(TGlobal) Global mean temperature from POISE [C]: 13.94577831 
+(AlbedoGlobal) Global mean bond albedo from POISE []: 0.35088923 
+(FluxInGlobal) Global mean flux in (insol*(1-albedo)) from POISE [kg*m^2/sec^2/(m^2*sec)]: 231.96272563 
+(FluxOutGlobal) Global mean flux out from POISE [W/m^2]: 232.44667667 
+(TotIceMass) Global total ice mass in ice sheets [kg]: 1.06644605e+20 
+(TotIceFlow) Global total ice flow in ice sheets (should = 0) [kg]: -3.27930703e-13 
+(TotIceBalance) Global total ice balance in ice sheets (this time step) [kg]: 5.30017112e-08 
+(SkipSeas) Is Seasonal model skipped due to RGH or snowball? []: 0.00000000 
+(AreaIceCov) Fractional area ice covered []: 0.20834437 
+(Latitude) Latitude. [Degrees]: 83.40235225 
+(TempLat) Surface temperature by latitude. [C]: -21.08178865 
+(AlbedoLat) Surface albedo by latitude. []: 0.60000000 
+(AnnInsol) Annual insolation by latitude. [kg*m^2/sec^2/(m^2*sec)]: 79.67160802 
+(FluxMerid) Total meridional (northward) flux by latitude [kg*m^2/sec^2]: 1.84042753e+15 
+(FluxIn) Incoming flux by latitude [kg*m^2/sec^2/(m^2*sec)]: 31.86867273 
+(FluxOut) Outgoing (spaceward) flux by latitude [kg*m^2/sec^2/(m^2*sec)]: 159.23906173 
+(DivFlux) Divergence of flux (flow into adjacent cells) by latitude [kg*m^2/sec^2/(m^2*sec)]: -124.50712670 
+(IceMass) Mass of ice sheets/area by latitude []: 3.32416732e+06 
+(IceHeight) Height of ice sheets [m]: 3626.23249009 
+(DIceMassDt) derivative of mass of ice sheets/area by latitude [m]: 5.57812500e-06 
+(IceFlow) flow of ice sheets/area by latitude []: -4.69798612e-09 
+(EnergyResL) Energy residual on land [kg*m^2/sec^2/(m^2*sec)]: -1.45097143 
+(EnergyResW) Energy residual over water [kg*m^2/sec^2/(m^2*sec)]: 0.39585337 
+(BedrockH) height/depth of bedrock [m]: -995.42164741 
+(TempLandLat) Land surface temperature by latitude. [C]: -22.37172091 
+(TempWaterLat) Water surface temperature by latitude. [C]: -20.41727808 
+(AlbedoLandLat) Land surface albedo by latitude. []: 0.60000000 
+(AlbedoWaterLat) Water surface albedo by latitude. []: 0.60000000 
+(TempMinLat) Minimum surface temperature over a year by latitude. [sec]: 248.73427621 
+(TempMaxLat) Maximum surface temperature over a year by latitude. [sec]: 255.48975362 
+(Snowball) Is the planet in a snowball state? []: 0.00000000 
+(PlanckBAvg) Annually averaged Planck B coeff []: 2.09000000 
+(IceAccum) Ice growth per orbit (accumulation only) []: 0.99196774 
+(IceAblate) ice decay per orbit (ablation only) []: 0.00000000 
+(TempMaxLand) Maximum surface temperature on land [sec]: 259.97507525 
+(TempMaxWater) Maximum surface temperature on water [sec]: 253.64380187 
+(PeakInsol) Peak insolation by latitude. [kg*m^2/sec^2/(m^2*sec)]: 227.52497776 
+(IceCapNorthLand) Does the planet have a northern polar ice cap on land? []: 1.00000000 
+(IceCapNorthSea) Does the planet have a northern polar sea ice cap []: 1.00000000 
+(IceCapSouthLand) Does the planet have a southern polar ice cap on land? []: 1.00000000 
+(IceCapSouthSea) Does the planet have a southern polar sea ice cap? []: 1.00000000 
+(IceBeltLand) Does the planet have a land ice belt? []: 0.00000000 
+(IceBeltSea) Does the planet have a sea ice belt? []: 0.00000000 
+(SnowballLand) Is all land covered in ice? []: 0.00000000 
+(SnowballSea) Is all sea covered in ice? []: 0.00000000 
+(IceFree) Is the planet free of sea and land ice? []: 0.00000000 
+(IceCapNorthLatLand) Southernmost extent of northern land ice cap. [rad]: 0.81609592 
+(IceCapNorthLatSea) Southernmost extent of northern sea ice cap. [rad]: 0.98711056 
+(IceCapSouthLatLand) Northernmost extent of southern land ice cap. [rad]: -0.75975208 
+(IceCapSouthLatSea) Northernmost extent of southern sea ice cap. [rad]: -0.75975208 
+(IceBeltNorthLatLand) Northernmost extent of land ice belt. [rad]: 100.00000000 
+(IceBeltNorthLatSea) Northernmost extent of sea ice belt. [rad]: 100.00000000 
+(IceBeltSouthLatLand) Southernmost extent of land ice belt. [rad]: 100.00000000 
+(IceBeltSouthLatSea) Southernmost extent of sea ice belt. [rad]: 100.00000000 
+Output Order: Time[year] TGlobal[C] AlbedoGlobal[] FluxOutGlobal[solar*AU^2/year^2/(AU^2*year)] TotIceMass[kg] AreaIceCov[kg] DeltaTime[year]
+Grid Output Order: Time[year] Latitude[Degrees] IceMass[Degrees] TempLat[C] AlbedoLat[] IceAccum[] IceAblate[] TempLandLat[C] TempWaterLat[C]

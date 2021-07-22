@@ -1,0 +1,9 @@
+# sun parameters
+sName        sun
+dMass        0.972
+dSemi        0
+dEcc         0
+dRadius      0.00401
+dLuminosity  1.9140e+26
+sStellarModel none
+saModules    stellar

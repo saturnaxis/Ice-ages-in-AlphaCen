@@ -1,0 +1,17 @@
+sSystemName   aCenA
+iVerbose      5
+iDigits       8
+bOverwrite    1
+sUnitMass     solar
+sUnitLength   au
+sUnitTime     y
+sUnitAngle    d
+bDoLog        1
+saBodyFiles   sun.in earth.in
+
+bDoForward    1
+bVarDt        0
+dEta          0.1
+dTimeStep     10.
+dStopTime     5.0e+05
+dOutputTime   1000

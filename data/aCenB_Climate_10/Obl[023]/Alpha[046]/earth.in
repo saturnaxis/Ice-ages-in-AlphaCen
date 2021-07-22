@@ -1,0 +1,60 @@
+sName        Earth
+saModules    poise
+dMass        3.00316726e-06
+dRadius      -1.00
+dRotPeriod   -1.02299221
+dObliquity   23.00
+bReadOrbitOblData   1
+sFileOrbitOblData obl_data.txt
+dSemi        0.70710678
+saOutputOrder    Time -TGlobal AlbedoGlobal -FluxOutGlobal -TotIceMass AreaIceCov DeltaTime
+dDynEllip    0.00307000
+dPrecA       23.761
+#dPrecRate    0.01277778
+dRadGyra     0.57411741
+#bForcePrecRate    0
+
+#saOutputOrder    Time Obliq PrecA 
+saGridOutput     Time -Latitude IceMass -TempLat AlbedoLat IceAccum IceAblate -TempLandL -TempWaterL
+
+#_______poise parameters (have fun with these!)_________________________________________
+iLatCellNum      151                    #number of latitude cells
+bClimateModel     sea                   #use seasonal or annual model
+dTGlobalInit      14.85                 #initial guess at average surface temp
+iNumYears         4                     #number of years (orbits) to run clim model
+iNStepInYear 60                         #number of steps to take in a "year"
+#dSurfAlbedo       0.35                 #average surface albedo (annual model only)
+
+#__ice params_________
+bIceSheets       1                      #enable ice sheets
+dInitIceLat      90.                    #how low do initial ice sheet extend?
+dInitIceHeight   0.                     #height of initial ice sheets
+dIceDepRate       2.25e-5               #rate of snow build up (when T < 0)
+dIceAlbedo        0.6                   #albedo of ice
+iIceDt             5                    #time step of ice-sheet model (orbits)
+iReRunSeas         500                  #how often to re-run seasonal model
+bSeaIceModel      0                     #use sea ice model (slow!)
+bSkipSeasEnabled   1                    #can skip seasonal if snowball state present
+
+#__heat diffusion______
+#bMEPDiff         1                     #calculate diffusion using max entropy production
+#bHadley          1                     #mimic hadley heat diffusion
+dDiffusion 0.58                         #diffusion coefficient (fixed)
+dNuLandWater 0.8                        #Heat diffusion coefficient between Land and Water
+
+#__outgoing flux_______
+dPlanckA         203.3                  #offset for OLR calculation (greenhouse)
+dPlanckB         2.09                   #slope of OLR calc (water vapor feedback)
+bCalcAB           0                     #calculate A & B from Kasting model fits
+#dpCO2 0.00028                          #partial pressure of co2
+
+#__surface properties__
+dAlbedoLand       0.363                 #albedo of land
+dAlbedoWater      0.263                 #albedo of water
+dHeatCapLand      1.55e7                #land heat capacity
+dHeatCapWater     4.428e6               #water heat capacity
+dMixingDepth      70                    #mixing depth of ocean
+
+iGeography      uni3                    #Geography uniform (uni3) or modern (modn)
+bElevFB 0
+dRefHeight 400
