@@ -108,7 +108,9 @@ for i in range(0,6):
         for k in range(0,len(abin)):
             if data[k,-3] != data[k,-4]:
                 switch_states[k] = 1
-        ax.plot(data[switch_states==1,0],data[switch_states==1,1]+0.005,'wx',ms=4,zorder=4,alpha=0.75)
+        #ax.plot(data[switch_states==1,0],data[switch_states==1,1]+0.005,'wx',ms=4,zorder=4,alpha=0.75)
+        switch_rows = np.where(switch_states==1)[0]
+        ax.plot(data[switch_rows,0],data[switch_rows,1],'m+',ms=6,zorder=4)
     else:
         CS = ax.pcolormesh(xi,yi+0.005,zi,cmap = my_cmap,vmin=vmin,vmax=vmax,shading='auto')
     #ax.plot(23,46,color='w',marker='$\oplus$',ms=25)
@@ -175,6 +177,6 @@ for i in range(0,6):
 
 fig.subplots_adjust(hspace=0.15,wspace=0.15)
 
-fname  = "GenBin_EBM.png"
-fig.savefig(fname,bbox_inches='tight',dpi=300)
+
+fig.savefig(plot_dir+"Fig16.png",bbox_inches='tight',dpi=300)
 plt.close()

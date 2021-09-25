@@ -63,7 +63,7 @@ Clim_time = Climate_data[:,0]/1e3
 time = obl_data[:,0]/1e3
 ecc = Orb_data[:,1]
 Climate_ang = np.radians(Orb_data[:,2] + Orb_data[:,3] + obl_data[:,2])
-CPP = ecc*np.sin(Climate_ang)
+CPP = ecc*np.sin(np.radians(obl_data[:,1]))*np.sin(Climate_ang)
 
 def colorbar(mappable):
     last_axes = plt.gca()
@@ -113,8 +113,8 @@ ls = ['-','--',':','-.','-']
 sub_lbl = ['a','b','c','d','e']
 
 
-ymin = [0.0,10,-0.02,0,0]
-ymax = [0.02,35,0.02,83,83]
+ymin = [0.0,10,-0.015,0,0]
+ymax = [0.02,35,0.015,83,83]
 
 tmax = np.max(Clim_time) #Myr
 
@@ -144,7 +144,8 @@ ax_list[1].set_ylabel("$\\varepsilon$",fontsize=20)
 ax_list[2].set_xlim(0,tmax)
 ax_list[2].set_xticklabels([])
 ax_list[2].tick_params(axis='both', direction='out',length = 4.0, width = 4.0)
-ax_list[2].set_ylabel("$e_{\\rm p}\sin(\\varpi_{\\rm p}+\\psi)$",fontsize=20)
+#ax_list[2].set_ylabel("$e_{\\rm p}\sin(\\varpi_{\\rm p}+\\psi)$",fontsize=20)
+ax_list[2].set_ylabel("COPP",fontsize=fs)
 
 vmin2,vmax2 = np.min(Climate_data[:,3]),np.max(Climate_data[:,3])
 

@@ -9,12 +9,19 @@ Attribution
 A more detailed description of these simulations, methods, and the context for the future observations will be available in the following paper.  Please use the following citation, if you find these data/tools useful in your research. 
 
 ```
-@article{Quarles2021,
- author = {{Quarles}, Billy and {Eggl}, Siegfried and {Rosario-Franco}, Marialis and {Li}, Gongjie},
-        title = "{Milankovitch Cycles for a Circumstellar Earth-analog within {\ensuremath{\alpha}} Centauri-like Binaries}",
-      journal = {\mnras},
+@ARTICLE{Quarles2021,
+       author = {{Quarles}, Billy and {Li}, Gongjie and {Lissauer}, Jack J.},
+        title = "{Milankovitch Cycles for a Circumstellar Earth-analog within $\alpha$ Centauri-like Binaries}",
+      journal = {arXiv e-prints},
+     keywords = {Astrophysics - Earth and Planetary Astrophysics},
          year = 2021,
-        month = jul,
-        pages = {"submitted"}
+        month = aug,
+          eid = {arXiv:2108.12650},
+        pages = {arXiv:2108.12650},
+archivePrefix = {arXiv},
+       eprint = {2108.12650},
+ primaryClass = {astro-ph.EP},
+       adsurl = {https://ui.adsabs.harvard.edu/abs/2021arXiv210812650Q},
+      adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 ```

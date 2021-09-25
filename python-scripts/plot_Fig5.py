@@ -72,6 +72,7 @@ for i in range(0,3):
     yi = np.arange(0,101,1)
     zi = griddata((eps,alpha),Q,(xi[None,:],yi[:,None]),method = 'linear')
 
+    none_map = colors.ListedColormap(['none'])
     my_cmap = cm.get_cmap(cmap)
     norm = colors.Normalize(vmin,vmax)
     cmmapable = cm.ScalarMappable(norm,my_cmap)
@@ -87,7 +88,12 @@ for i in range(0,3):
         for k in range(0,len(eps)):
             if data[k,-3] != data[k,-4]:
                 switch_states[k] = 1
-        ax.plot(data[switch_states==1,0],data[switch_states==1,1]+0.5,'wx',ms=2,zorder=4,alpha=0.75)
+        #zi = np.ma.masked_greater(zi,2*i_max[i])
+        #ax.pcolor(xi-0.5,yi-0.5,zi,hatch='x',alpha=0)
+        
+        switch_rows = np.where(switch_states==1)[0]
+        ax.plot(data[switch_rows,0],data[switch_rows,1]+0.5,'m+',ms=6,zorder=4)
+
     else:
         CS = ax.pcolormesh(xi,yi+0.5,zi,cmap = cmap,vmin=vmin,vmax=vmax,shading='auto')
     ax.plot(23,10,color='w',marker='$\oplus$',ms=25)
@@ -97,7 +103,7 @@ for i in range(0,3):
     ax.set_ylim(0,101)
     ax.set_xlim(0,90)
     ax.tick_params(axis='both', direction='out',length = 8.0, width = 8.0,labelsize=fs)
-    ax.text(0.02,0.86,sub_lbl[i], color='w',fontsize='x-large',weight='bold',horizontalalignment='left',transform=ax.transAxes)
+    ax.text(0.02,0.86,sub_lbl[i], color='w',fontsize='x-large',weight='bold',horizontalalignment='left',transform=ax.transAxes,zorder=5)
     ax.set_ylabel('$\\gamma$ ('+u'\u2033'+'/yr)', fontsize=fs)
     
     if i == 0:

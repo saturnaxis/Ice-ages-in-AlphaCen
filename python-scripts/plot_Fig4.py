@@ -55,24 +55,25 @@ for i in range(0,4):
     if i == 0:
         Q = data[:,2]
         cmap = cm.gist_rainbow
-        vmin, vmax = 0,90
+        vmin, vmax = 0,45
     elif i == 1:
         cmap = cm.magma
         data[data[:,3]==0,3]=0.01
         Q = np.log10(data[:,3])
-        vmin, vmax = 0, np.log10(60)
+        vmin, vmax = 0, np.log10(10)
     elif i == 2:
         data[data[:,4]==0,4]=0.01
         Q = np.log10(data[:,4])
         cmap = cm.plasma
-        vmin, vmax = -2,0
+        vmin, vmax = -2,-0.6
     else:
         cmap = cm.gnuplot
         data[data[:,5]==0,5]=0.01
         Q = np.log10(data[:,5])
-        vmin, vmax = -2, np.log10(0.3)
+        vmin, vmax = -2, np.log10(0.1)
     eps = data[:,0]
     alpha = data[:,1]
+    print(np.max(Q))
 
     xi = np.arange(0,91,1)
     yi = np.arange(0,101,1)
@@ -103,14 +104,15 @@ for i in range(0,4):
         color_label=r'$\Delta \epsilon$'
         cbar=colorbar(CS)
         cbar.set_label(color_label,fontsize=fs)
-        cticks = np.arange(0,105,15)
+        cticks = np.arange(0,60,15)
         cbar.ax.yaxis.set_ticks(cticks)
         cbar.ax.tick_params(axis='both', direction='out',length = 8.0, width = 8.0,labelsize=fs)
     elif i == 1:
         color_label=r'$\Delta T$'
         cbar=colorbar(CS)
         cbar.set_label(color_label,fontsize=fs)
-        ctick_rng = np.array([1,2,5,10,20,40])
+        #ctick_rng = np.array([1,2,5,10,20,40])
+        ctick_rng = np.array([1,2,5,10])
         cticks = np.log10(ctick_rng)
         cticklabels = ["%i" % f for f in ctick_rng]
         cbar.ax.yaxis.set_ticks(cticks)
@@ -120,14 +122,15 @@ for i in range(0,4):
         color_label=r'$\Delta f_{\rm ice}$'
         cbar=colorbar(CS)
         cbar.set_label(color_label,fontsize=fs)
-        ctick_rng = np.concatenate((np.arange(0.01,0.1,0.01),np.arange(0.1,1.1,0.1)))
+        #ctick_rng = np.concatenate((np.arange(0.01,0.1,0.01),np.arange(0.1,1.1,0.1)))
+        ctick_rng = np.concatenate((np.arange(0.01,0.1,0.01),np.arange(0.1,0.3,0.1)))
         cticks = np.log10(ctick_rng)
         cticklabels = ["0.01"]
-        for l in range(0,16):
+        for l in range(0,9):
             cticklabels.append("")
             if l == 7:
                 cticklabels.append("0.1")
-        cticklabels.append("1")
+        #cticklabels.append("1")
         cbar.ax.yaxis.set_ticks(cticks)
         cbar.ax.yaxis.set_ticklabels(cticklabels)
         cbar.ax.tick_params(axis='both', direction='out',length = 8.0, width = 8.0,labelsize=fs)
@@ -135,14 +138,15 @@ for i in range(0,4):
         color_label=r'$\Delta \alpha$'
         cbar=colorbar(CS)
         cbar.set_label(color_label,fontsize=fs)
-        ctick_rng = np.concatenate((np.arange(0.01,0.1,0.01),[0.1,0.2,0.3]))
+        #ctick_rng = np.concatenate((np.arange(0.01,0.1,0.01),[0.1,0.2,0.3]))
+        ctick_rng = np.concatenate((np.arange(0.01,0.1,0.01),[0.1]))
         cticks = np.log10(ctick_rng)
         cticklabels = ["0.01"]
-        for l in range(0,9):
+        for l in range(0,8):
             cticklabels.append("")
             if l == 7:
                 cticklabels.append("0.1")
-        cticklabels.append("0.3")
+        #cticklabels.append("0.3")
         cbar.ax.yaxis.set_ticks(cticks)
         cbar.ax.yaxis.set_ticklabels(cticklabels)
         cbar.ax.tick_params(axis='both', direction='out',length = 8.0, width = 8.0,labelsize=fs)
